@@ -1,0 +1,339 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+}
+
+/* Navbar */
+.navbar-bg {
+  background-color: #1e3a5f;
+}
+
+.navbar-toggler-icon {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Header Sidebar */
+.sidebar-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #1e3a5f;
+  padding: 1rem;
+  z-index: 1060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Judul di sidebar */
+.sidebar-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Tombol close "X" */
+.btn-close-sidebar {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-close-sidebar:hover {
+  color: #ff6b6b;
+}
+
+.sidebar-collapse {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #1e3a5f;
+  padding-top: 80px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.sidebar-collapse.open {
+  left: 0;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1040;
+}
+
+/* Hilangkan scroll saat sidebar terbuka */
+body.sidebar-open {
+  overflow: hidden;
+}
+
+.nav-link2 {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.nav-link2:hover:not(.active-nav) {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+/* Judul utama */
+.familyName {
+  font-size: 5rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.familyName span {
+  color: #3b82f6;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.home-content {
+  flex-direction: row;
+}
+
+/* Navigasi keluarga */
+.navigasi-wrapper {
+  min-width: 200px;
+  min-height: 300px;
+}
+
+.keluarga-item {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.keluarga-item:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.active-keluarga {
+  background-color: #1e3a5f;
+  color: white;
+  font-weight: bold;
+}
+
+/* Album foto */
+.albumfoto-wrapper {
+  flex: 1;
+}
+
+/* Gambar profil */
+.card img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #eee;
+}
+
+.card-text {
+  margin-bottom: 0;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 2000px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Deskripsi keluarga */
+.family-desc {
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+  color: #444;
+  margin-top: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Kutipan keluarga */
+.family-quote {
+  font-style: italic;
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 1.2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Wave background */
+.wave-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-container svg {
+  display: block;
+  width: 200%;
+  height: 250px;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.wave-container svg path {
+  animation: waveAnimation 30s linear infinite;
+}
+
+/* FamilyName Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover & Active Styles */
+.text-hover-dark2,
+.text-hover-dark2 i,
+.text-active-dark2,
+.text-active-dark2 i {
+  transition: color 0.2s ease, background-color 0.2s ease, border-radius 0.3s ease-in;
+}
+
+.text-hover-dark2:hover {
+  color: #22d3ee !important;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.text-hover-dark2:hover i,
+.text-hover-dark2:hover .svg-icon {
+  color: #22d3ee !important;
+}
+
+.text-active-dark2.active {
+  color: #60a5fa !important;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.text-active-dark2.active i {
+  color: #60a5fa !important;
+}
+
+/* ===================== MEDIA QUERY ===================== */
+
+/* Sembunyikan collapse default pada layar kecil agar tidak tumpang tindih */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigasi-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .albumfoto-wrapper {
+    width: 100%;
+  }
+
+  .familyName {
+    font-size: 3rem;
+  }
+
+  .profile-image {
+    height: 300px;
+    max-width: 500px;
+  }
+
+  .family-desc {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .family-quote {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .home-content {
+    flex-direction: column;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+/* Style ul dan li agar sesuai */
+.sidebar-collapse ul.navbar-nav {
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-collapse ul.navbar-nav > li.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-collapse .nav-link {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Hover dan active */
+.sidebar-collapse .nav-link:hover,
+.sidebar-collapse .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 5px;
+}
