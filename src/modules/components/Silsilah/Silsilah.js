@@ -2,7 +2,7 @@ import React from "react";
 
 function Silsilah() {
   return (
-    <div className="container">
+    <div className="container-silsilah">
       <h1>Silsilah Page</h1>
     </div>
   );

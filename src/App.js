@@ -1,11 +1,5 @@
-import Layouts from "./layouts/Layouts";
-
 function App() {
-  return (
-    <div>
-      <Layouts />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;

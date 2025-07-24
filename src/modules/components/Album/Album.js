@@ -6,7 +6,7 @@ function Album() {
   const [keluargaDipilih, setKeluargaDipilih] = useState("");
 
   return (
-    <div className="container d-flex flex-column flex-md-row gap-4">
+    <div className="container-album d-flex flex-column flex-md-row gap-4">
       <Navigasi onSelect={setKeluargaDipilih} selected={keluargaDipilih} />
       <AlbumFoto keluarga={keluargaDipilih} />
     </div>

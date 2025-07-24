@@ -41,7 +41,7 @@ export default function AlbumFoto({ keluarga }) {
     ));
 
   return (
-    <div className="albumfoto-wrapper shadow-sm p-3">
+    <div className="albumfoto-wrapper">
       <h3 className="mb-4">Album Foto: {keluarga}</h3>
 
       {/* Ayah & Ibu */}
