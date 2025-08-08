@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Memberi padding atas dan samping ke seluruh konten utama */
 main {
   padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: auto;
-  box-sizing: border-box;
 }
 
 /* Menghindari scroll horizontal */
@@ -33,7 +38,7 @@ body {
   height: 100vh;
   background-color: #1e3a5f;
   z-index: 1050;
-  padding-top: 70px; /* tinggi navbar */
+  padding-top: 70px;
   transition: left 0.3s ease-in-out;
   overflow-y: auto;
 }
@@ -85,6 +90,97 @@ body {
   margin: 0;
 }
 
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../images/view.jpg") no-repeat center/cover;
+}
+
+.container-login {
+  width: 26.25rem;
+  background-color: transparent;
+  border: 0.125rem solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1.875rem);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 0.625rem;
+  padding: 1.875rem 2.5rem;
+}
+
+.container-login h1 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.container-login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 1.875rem 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 0.125rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1.25rem 2.8125rem 1.25rem 1.25rem;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.container-login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: -0.9375rem 0 0.9375rem;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 0.25rem;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.container-login button {
+  width: 100%;
+  height: 2.185rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 700;
+  margin: 1.25rem 0 0.9375rem;
+}
+
 /* Container utama halaman home */
 .container-home {
   display: flex;
@@ -99,11 +195,8 @@ body {
 /* Layout konten utama */
 .home-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 10rem;
   width: 100%;
   max-width: 1200px;
 }
@@ -335,9 +428,37 @@ body {
   animation: fadeInUp 1s ease-out forwards;
 }
 
+.container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+}
+
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .container-login {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
   .home-content {
+    gap: 20px;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .home-content {
+    gap: 1.25rem;
     flex-direction: column;
     text-align: center;
   }
@@ -347,12 +468,69 @@ body {
   }
 
   .familyName {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .container-album {
+    padding: 1rem;
+  }
+
+  .albumfoto-wrapper {
+    padding: 1rem;
+  }
+
+  .navigasi-wrapper {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .container-login {
+    width: 80%;
+    padding: 1rem;
   }
 
   .footer-name {
     font-size: 1rem;
     justify-content: center;
     text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .container-login h1 {
+      font-size: 1.5rem;
+    }
+
+    .container-login {
+      padding: 0.8rem;
+    }
+
+    .input-box input {
+      font-size: 0.9rem;
+      padding: 0.8rem 2.5rem 0.8rem 1rem;
+    }
+
+    .container-home {
+      padding-top: 70px;
+    }
+
+    .familyName {
+      font-size: 1.5rem;
+    }
+
+    .family-desc {
+      font-size: 1rem;
+    }
+
+    .profile-image-home {
+      height: auto;
+      max-height: 250px;
+    }
+
+    .btn-download {
+      padding: 0.8rem;
+      margin: 0.8rem;
+      font-size: 0.9rem;
+    }
   }
 }

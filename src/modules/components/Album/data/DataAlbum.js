@@ -556,7 +556,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Ibu",
-        image: "/images/Wanita.png",
+        image: "/images/Farida.png",
       },
       {
         id: "46",
@@ -567,7 +567,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Wanita.png",
+        image: "/images/Zahra.png",
       },
       {
         id: "47",
@@ -578,7 +578,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Wanita.png",
+        image: "/images/Kaila.png",
       },
     ],
   },
