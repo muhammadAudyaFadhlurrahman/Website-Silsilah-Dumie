@@ -222,8 +222,8 @@ body {
 /* Styling gambar */
 .profile-image {
   width: 100%;
-  max-width: 500px;
-  height: 300px;
+  /* max-width: 500px; */
+  height: 360px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -281,7 +281,7 @@ body {
 /* Wrapper album */
 .albumfoto-wrapper {
   flex: 1;
-  padding: 2rem;
+  padding: 1.25rem;
   background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -289,9 +289,10 @@ body {
 
 /* Responsive container jika pakai container div utama */
 .container-album {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 2rem auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 100%;
+  margin: 3rem auto;
 }
 
 /* Navigasi keluarga */
@@ -300,7 +301,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   height: fit-content;
   position: sticky;
   top: 80px;

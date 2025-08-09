@@ -11,7 +11,7 @@ export const DataAlbum = [
         apakahMasihHidup: "Almarhum",
         tanggalWafat: "Bogor, 3 Juni 2022",
         statusKeluarga: "Ayah",
-        image: "/images/Pria.png",
+        image: "/images/Yeppi.jpg",
       },
       {
         id: "2",
@@ -22,7 +22,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Ibu",
-        image: "/images/Wanita.png",
+        image: "/images/Restu.jpg",
       },
       {
         id: "3",
@@ -70,7 +70,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Wanita.png",
+        image: "/images/Tazkia.png",
       },
       {
         id: "7",
@@ -81,7 +81,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Menantu",
-        image: "/images/Pria.png",
+        image: "/images/Ichsan.jpg",
       },
       {
         id: "8",
@@ -92,7 +92,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Cucu",
-        image: "/images/Wanita.png",
+        image: "/images/Rayna.jpg",
         orangTua: {
           ayahId: "7",
           ibuId: "6",
@@ -107,7 +107,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Wanita.png",
+        image: "/images/Tarisa.jpg",
       },
     ],
   },
@@ -123,7 +123,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Ayah",
-        image: "/images/Pria.png",
+        image: "/images/Gunawan.jpg",
       },
       {
         id: "11",
@@ -485,7 +485,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Ibu",
-        image: "/images/Wanita.png",
+        image: "/images/Yupi.jpg",
       },
       {
         id: "40",
@@ -496,7 +496,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Ayah",
-        image: "/images/Pria.png",
+        image: "/images/Yudi.jpg",
       },
       {
         id: "41",
@@ -507,7 +507,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Pria.png",
+        image: "/images/Feisal.jpg",
       },
       {
         id: "42",
@@ -518,7 +518,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Wanita.png",
+        image: "/images/Septia.jpg",
       },
       {
         id: "43",
@@ -529,7 +529,7 @@ export const DataAlbum = [
         apakahMasihHidup: null,
         tanggalWafat: null,
         statusKeluarga: "Anak",
-        image: "/images/Pria.png",
+        image: "/images/Khaidir.jpg",
       },
     ],
   },

@@ -24,7 +24,7 @@ export default function AlbumFoto({ keluarga }) {
     return null;
   };
 
-  const renderCards = (items, colClass = "col-md-4", showOrtu = false) =>
+  const renderCards = (items, colClass = "col-lg-4", showOrtu = false) =>
     items.map((item, index) => (
       <div className={`${colClass} col-12 mb-3`} key={index}>
         <div className="card h-100 shadow">
